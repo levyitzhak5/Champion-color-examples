@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>גווני Champion – דוגמאות</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+  }
+  
+  /* אזור עליון */
+  .section-top {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  /* אזור תחתון (ייצור עצמי) */
+  .section-bottom {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-top: 3px solid #ccc;
+  }
+
+  h2 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #222;
+    flex-shrink: 0;
+  }
+
+  /* גריד ששומר על גודל אחיד */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 210px);
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.15);
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+    /* גודל קשיח לכל כרטיס */
+    width: 210px; 
+    height: 220px; 
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 4px;
+    flex-shrink: 0;
+  }
+
+  .code {
+    font-weight: bold;
+    font-size: 2.2em;
+    color: #000;
+    line-height: 1.1;
+  }
+
+  .name {
+    font-size: 0.65em;
+    color: #444;
+    margin-top: 2px;
+  }
+
+  .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    flex: 1;
+    min-height: 0;
+  }
+
+  .images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    background: #fafafa;
+  }
+</style>
+</head>
+<body>
+
+<!-- אזור 1: הגוונים הרגילים -->
+<div class="section-top">
+  <h2>גווני Champion – 20 דוגמאות</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="header"><div class="code">KK001</div><div class="name">שחור</div></div>
+      <div class="images"><img src="images/KK001.jpg" alt="KK001 שחור"><img src="images/KK001_2.jpg" alt="KK001 שחור"></div>
+    </div>
+
+    <div class="card">
+      <div class="header"><div class="code">BS501</div><div class="name">כחול נייבי</div></div>
+      <div class="images"><img src="images/BS501.jpg" alt="BS501"><img src="images/BS501_2.jpg" alt="BS501"></div>
+    </div>
+
+    <div class="card">
+      <div class="header"><div class="code">MS513</div><div class="name">כתום חלודה / טרקוטה</div></div>
+      <div class="images"><img src="images/MS513.jpg" alt="MS513"><img src="images/MS513_2.jpg" alt="MS513"></div>
+    </div>
+
+    <div class="card">
+      <div class="header"><div class="code">PS090</div><div class="name">ורוד בהיר</div></div>
+      <div class="images"><img src="images/PS090.jpg" alt="PS090"><img src="images/PS090_2.jpg" alt="PS090"></div>
+    </div>
+
+    <div class="card">
+      <div class="header"><div class="code">RS508</div><div class="name">אדום יין</div></div>
+      <div class="images"><img src="images/RS508.jpg" alt="RS508"><img src="images/RS508_2.jpg" alt="RS508"></div>
+    </div>
+
+    <div class="card">
+      <div class="header"><div class="code">YS175</div><div class="name">חרדל / חום בהיר</div></div>
+      <div class="images"><img src="images/YS175.jpg" alt="YS175"><img src="images/YS175_2.jpg" alt="YS175"></div>
+    </div>
+
+    <div class="card">
+      <div class="header"><div class="code">GS509</div><div class="name">ירוק זית / זית כהה</div></div>
+      <div class="images"><img src="images/GS509.jpg" alt="GS509"><img src="images/GS509_2.jpg" alt="GS509"></div>
+    </div>
+
+    <div class="card">
+      <div class="header"><div class="code">BS230</div><div class="name">כחול בהיר / תכלת</div></div>
+      <div class="images"><img src="images/BS230.jpg" alt="BS230"><img src="images/BS230_2.jpg" alt="BS230"></div>
+    </div>
+
+    <div class="card">
+      <div class="header"><div class="code">WW001</div><div class="name">לבן</div></div>
+      <div class="images"><img src="images/WW001.jpg" alt="WW001"><img src="images/WW001_2.jpg" alt="WW001"></div>
+    </div>
+
+    <div class="card">
+      <div class="header"><div class="code">MS041</div><div class="name">כתום / כתום בהיר</div></div>
+      <div class="images"><img src="images/MS041.jpg" alt="MS041"><img src="images/MS041_2.jpg" alt="MS041"></div>
+    </div>
+
+    <div class="card">
+      <div class="header"><div class="code">GS156</div><div class="name">ירוק בהיר / מנטה</div></div>
+      <div class="images"><img src="images/GS156.jpg" alt="GS156"><img src="images/GS156_2.jpg" alt="GS156"></div>
+    </div>
+
+    <div class="card">
+      <div class="header"><div class="code">EM021</div><div class="name">שמנת / אפור בהיר</div></div>
+      <div class="images"><img src="images/EM021.jpg" alt="EM021"><img src="images/EM021_2.jpg" alt="EM021"></div>
+    </div>
+
+    <div class="card">
+      <div class="header"><div class="code">ES084</div><div class="name">ורוד / ורוד עתיק</div></div>
+      <div class="images"><img src="images/ES084.jpg" alt="ES084"><img src="images/ES084_2.jpg" alt="ES084"></div>
+    </div>
+
+    <div class="card">
+      <div class="header"><div class="code">WW006</div><div class="name">לבן / לבן שבור</div></div>
+      <div class="images"><img src="images/WW006.jpg" alt="WW006"><img src="images/WW006_2.jpg" alt="WW006"></div>
+    </div>
+
+    <div class="card">
+      <div class="header"><div class="code">BL056</div><div class="name">כחול / כחול בהיר</div></div>
+      <div class="images"><img src="images/BL056.jpg" alt="BL056"><img src="images/BL056_2.jpg" alt="BL056"></div>
+    </div>
+
+    <div class="card">
+      <div class="header"><div class="code">YS084</div><div class="name">צהוב / חרדל בהיר</div></div>
+      <div class="images"><img src="images/YS084.jpg" alt="YS084"><img src="images/YS084_2.jpg" alt="YS084"></div>
+    </div>
+
+    <div class="card">
+      <div class="header"><div class="code">PS239</div><div class="name">ורוד / ורוד כהה</div></div>
+      <div class="images"><img src="images/PS239.jpg" alt="PS239"><img src="images/PS239_2.jpg" alt="PS239"></div>
+    </div>
+
+    <div class="card">
+      <div class="header"><div class="code">MS578</div><div class="name">אפור / אפור פחם</div></div>
+      <div class="images"><img src="images/MS578.jpg" alt="MS578"><img src="images/MS578_2.jpg" alt="MS578"></div>
+    </div>
+
+    <div class="card">
+      <div class="header"><div class="code">BS133</div><div class="name">כחול / כחול כהה</div></div>
+      <div class="images"><img src="images/BS133.jpg" alt="BS133"><img src="images/BS133_2.jpg" alt="BS133"></div>
+    </div>
+
+    <!-- הכרטיס החדש שנוסף -->
+    <div class="card">
+      <div class="header"><div class="code">GS559</div><div class="name">ירוק / ירוק כהה</div></div>
+      <div class="images"><img src="images/GS559.jpg" alt="GS559 ירוק"><img src="images/GS559_2.jpg" alt="GS559 ירוק – תמונה נוספת"></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- אזור 2: ייצור עצמי -->
+<div class="section-bottom">
+  <h2>גווני Champion – דוגמאות - ייצור עצמי</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="header"><div class="code">0TB</div><div class="name">שחור</div></div>
+      <div class="images"><img src="images/0TB.jpg" alt="0TB שחור"><img src="images/0TB_2.jpg" alt="0TB שחור – תמונה נוספת"></div>
+    </div>
+
+    <div class="card">
+      <div class="header"><div class="code">TAU</div><div class="name">בז' / אפור-חום</div></div>
+      <div class="images"><img src="images/TAU.jpg" alt="TAU בז'"><img src="images/TAU_2.jpg" alt="TAU בז' – תמונה נוספת"></div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
