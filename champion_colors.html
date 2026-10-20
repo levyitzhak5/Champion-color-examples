@@ -39,42 +39,44 @@
   /* גריד ששומר על גודל אחיד */
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 210px);
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, 140px);
+    gap: 8px;
     justify-content: center;
   }
 
   .card {
     background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,.15);
-    padding: 4px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.15);
+    padding: 3px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     
-    /* גודל קשיח לכל כרטיס */
-    width: 210px; 
-    height: 220px; 
+    /* גודל קשיח מוקטן (כ-2/3 מהגודל הקודם) */
+    width: 140px; 
+    height: 147px; 
   }
 
   .header {
     text-align: center;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
     flex-shrink: 0;
   }
 
   .code {
     font-weight: bold;
-    font-size: 2.2em;
+    /* הקטנת הפונט מ-1.5em ל-1em */
+    font-size: 1em; 
     color: #000;
     line-height: 1.1;
   }
 
   .name {
+    /* השארתי את הגודל המקורי כפי שביקשת */
     font-size: 0.65em;
     color: #444;
-    margin-top: 2px;
+    margin-top: 1px;
   }
 
   .images {
@@ -89,7 +91,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 4px;
+    border-radius: 3px;
     background: #fafafa;
   }
 </style>
@@ -98,7 +100,7 @@
 
 <!-- אזור 1: הגוונים הרגילים -->
 <div class="section-top">
-  <h2>גווני Champion – 32 דוגמאות</h2>
+  <h2>גווני Champion – 33 דוגמאות</h2>
   <div class="grid">
 
     <div class="card">
@@ -256,10 +258,14 @@
       <div class="images"><img src="images/BS220.jpg" alt="BS220 כחול"><img src="images/BS220_2.jpg" alt="BS220 כחול – תמונה נוספת"></div>
     </div>
 
-    <!-- הכרטיס החדש שנוסף -->
     <div class="card">
       <div class="header"><div class="code">KK002</div><div class="name">שחור / שחור כהה</div></div>
       <div class="images"><img src="images/KK002.jpg" alt="KK002 שחור"><img src="images/KK002_2.jpg" alt="KK002 שחור – תמונה נוספת"></div>
+    </div>
+
+    <div class="card">
+      <div class="header"><div class="code">ML005</div><div class="name">כחול / כחול בהיר</div></div>
+      <div class="images"><img src="images/ML005.jpg" alt="ML005 כחול"><img src="images/ML005_2.jpg" alt="ML005 כחול – תמונה נוספת"></div>
     </div>
 
   </div>
